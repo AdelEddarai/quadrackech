@@ -183,6 +183,107 @@ addEventListener('scroll', () => {
 //     `;
 // })
 
+let destination = [
+    {
+        title: 'Palm Grove Quad Bike Tour',
+        place: 'Marrakech',
+        price: 30,
+        rating: 5,
+        review: '1,328',
+        detail: 'Hotel pickup and drop off',
+        duration: '2 hours', // Additional detail: Duration of the tour
+        includes: 'Safety equipment provided', // Additional detail: What is included in the tour
+      },
+    {
+        title: 'Camel Ride Trip in Palm Groves',
+        place: 'Marrackech',
+        price: 29,
+        rating: 3.5,
+        review: '719',
+    },
+    {
+        title: 'Hot Air Balloon Flight',
+        place: 'Marrackech',
+        price: 300,
+        rating: 4.9,
+        review: '187'
+    },
+    {
+        title: 'Buggy Experience at Palmeraie',
+        place: 'Marrackech',
+        price: 90,
+        rating: 4.5,
+        review: '361'
+    },
+    {
+        title: 'Palm Grove Horseback Riding Tour',
+        place: 'Marrackech',
+        price: 45,
+        rating: 4.7,
+        review: '149',
+
+        
+    },
+    {
+        title: 'Private Sidecar ride',
+        place: 'Marrackech',
+        price: 200,
+        rating: 4.6,
+        review: '268'
+    },
+]
+
+const destinationBox = document.querySelector('.destination-box')
+
+destination.forEach((item, index) => {
+    let div = document.createElement('div');
+    div.classList.add('destination__item');
+    destinationBox.appendChild(div);
+
+    div.innerHTML = `
+        <div class="destination-image">
+            <img src="./img/destination-${index+1}.jpg" alt="Destination image">
+            <div class="price">$${item.price}</div>
+            
+        </div>
+        <h2>Enjoy the Beauty of the ${item.title}</h2>
+        <p class="description">${item.place}</p>
+        <div class="opinion">
+            <div class="rating">
+                <ion-icon name="star"></ion-icon>
+                <p class="description">${item.rating}</p>
+            </div>
+            <p class="description">(${item.review} Review)</p>
+            <a href="https://api.whatsapp.com/send/?phone=212633332947&text=Hola+Danila.&type=phone_number&app_absent=0"
+                                    target="_blank"><button class="button contact__card-button">
+                                        Call Now
+                                    </button></a>
+            <a href="https://api.whatsapp.com/send/?phone=212633332947&text=Hola+Danila.&type=phone_number&app_absent=0"
+            target="_blank"><button class="button contact__card-button">
+                Call Now
+            </button></a>
+
+                                    <style>
+                                    /* Style for the button */
+                                    .button {
+                                      margin-bottom: 10px;
+                                      background-color: #007bff;
+                                      color: #fff;
+                                      border: none;
+                                      padding: 10px 20px;
+                                      border-radius: 5px;
+                                      cursor: pointer;
+                                      font-size: 16px;
+                                      text-align: center;
+                                      text-decoration: none;
+                                    }
+                                    </style
+                                    
+        </div>
+    `;
+})
+
+
 
 
 
