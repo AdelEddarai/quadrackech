@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+   
+    <script defer src="js/app.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.svg">
+    <title>Travelia</title>
+</head>
+
+<body>
+    <div class="container" id="home">
+        <div class="bg"></div>
+
+        <nav class="padding-5">
+            <!-- <img src="./img/logo.svg" alt="Logo image"> -->
+            <a href="https://api.whatsapp.com/send/?phone=212633332947&text=Hola+Danila.&type=phone_number&app_absent=0"
+                target="_blank"><button>
+                    <strong>+212633332947</strong>
+                </button></a>
+            <div class="nav__items">
+                <div class="nav-line"></div>
+                <a href="#home" class="nav--active">Home</a>
+                <a href="#service">Service</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- <div class="nav__buttons">
+                <button>Login</button>
+                <button>Sing up</button>
+            </div> -->
+        </nav>
+
+        <button class="menu">
+            <span></span><span></span><span></span>
+        </button>
+
+        <aside class="padding-5">
+            <!-- <img src="./img/logo.svg" alt="Logo image"> -->
+            <a href="https://api.whatsapp.com/send/?phone=212633332947&text=Hola+Danila.&type=phone_number&app_absent=0"
+                target="_blank"><button>
+                    <strong>+212633332947</strong>
+                </button>
+            </a>
+            <div class="aside__items">
+                <div class="aside-line"></div>
+                <a href="#home" class="aside--active">Home</a>
+                <a href="#service">Service</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- <div class="nav__buttons">
+                <button>Login</button>
+                <button>Sing up</button>
+            </div> -->
+        </aside>
+
+        <header class="padding-5">
+            <div class="header__left">
+                <div class="header-tag">
+                    <p>Explore marrackech</p>
+                    <img src="./img/title-icon.svg" alt="Around the world">
+                </div>
+
+                <h1 class="ml12">A new Discovery</h1>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+                <style>
+                    .ml12 {
+                    font-weight: 200;
+                    font-size: 1.8em;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5em;
+                    }
+
+                    .ml12 .letter {
+                    display: inline-block;
+                    line-height: 1em;
+}
+                </style>
+
+                <script>
+                    // Wrap every letter in a span
+                    var textWrapper = document.querySelector('.ml12');
+                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                    anime.timeline({loop: true})
+                    .add({
+                        targets: '.ml12 .letter',
+                        translateX: [40,0],
+                        translateZ: 0,
+                        opacity: [0,1],
+                        easing: "easeOutExpo",
+                        duration: 1200,
+                        delay: (el, i) => 500 + 30 * i
+                    }).add({
+                        targets: '.ml12 .letter',
+                        translateX: [0,-30],
+                        opacity: [1,0],
+                        easing: "easeInExpo",
+                        duration: 1100,
+                        delay: (el, i) => 100 + 30 * i
+                    });
+                </script>
+                <h1>It's a Big World<br>Out There, Go Explore</h1>
+                <p class="description">We always make our customer happy by providing as many choices as possible</p>
+                <div class="buttons">
+                    <button class="trip">
+                        <a href="#contact">Plan a trip</a>
+                        <ion-icon name="chevron-forward"></ion-icon>
+                    </button>
+                    <!-- <button class="story">
+                        <img src="./img/bytonatech (1).mp4" alt="Our story">
+                        <p>Watch our Story</p>
+                        <span>
+                            <ion-icon name="play"></ion-icon>
+                        </span>
+                    </button> -->
+                </div>
+            </div>
+            <div class="header__right">
+                <img src="./img/3-remove.png" alt="Header banner image">
+                <!-- <video src="img/Marrakech Quad Biking.mp4" autoplay></video> -->
+            </div>
+        </header>
+
+        <section class="service padding-5" id="service">
+            <div class="service-info">
+                <h3 class="subtitle">What We Serve</h3>
+                <h2 class="title">Top Activities</h2>
+                <p class="description">Try a variety of benefits when using our services.</p>
+            </div>
+            <div class="service-box">
+                <div class="service__item" style="--bg-service: #ffe9db;">
+                    <img src="./img/service-icon-1.svg" alt="Service image">
+                    <h2>Lot of Choices</h2>
+                    <p class="description">Total 460+ destinations that we work with.</p>
+                </div>
+                <div class="service__item" style="--bg-service: #ffdfdc;">
+                    <img src="./img/service-icon-2.svg" alt="Service image">
+                    <h2>Best Tour Guide</h2>
+                    <p class="description">Our tour guide with 15+ years of experience.</p>
+                </div>
+                <div class="service__item" style="--bg-service: #eaddff;">
+                    <img src="./img/service-icon-3.svg" alt="Service image">
+                    <h2>Easy Booking</h2>
+                    <p class="description">With an easy and fast ticket purchase process.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="destination padding-5" id="pricing">
+            <h3 class="subtitle">Best Places In The World</h3>
+            <h2 class="title">Explore Top Destination</h2>
+            <div class="destination-box">
+                <div class="destination__item">
+                  <div class="destination-image">
+                    <a href="#">
+                    <img src="./img/destination-1.jpg" alt="Destination image">
+              
+                    <div class="price">$30</div>
+                  </div>
+                  <h2>Enjoy the Beauty of the Palm Grove Quad Bike Tour</h2>
+                  <p class="description">Marrakech</p>
+                  <div class="opinion">
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <p class="description">5</p>
+                    </div>
+                    <p class="description">(1,328 Review)</p>
+                    
+                  </div>
+                </div>
+            </a>
+            
+                <div class="destination__item">
+                  <div class="destination-image">
+                    <a href="">
+                    <img src="./img/destination-2.jpg" alt="Destination image">
+                
+                    <div class="price">$29</div>
+                  </div>
+                  <h2>Enjoy the Beauty of the Camel Ride Trip in Palm Groves</h2>
+                  <p class="description">Marrakech</p>
+                  <div class="opinion">
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <p class="description">3.5</p>
+                    </div>
+                    <p class="description">(719 Review)</p>
+                    
+                  </div>
+                </a>
+                </div>
+
+                <div class="destination__item">
+                    <div class="destination-image">
+                        <a href="index.html">
+                      <img src="./img/destination-3.jpg" alt="Destination image">
+                    
+                      <div class="price">$300</div>
+                    </div>
+                    <h2>Enjoy the Beauty of the Hot Air Balloon Flight</h2>
+                    <p class="description">Marrakech</p>
+                    <div class="opinion">
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <p class="description">4.9</p>
+                      </div>
+                      <p class="description">(187 Review)</p>
+                    </div>
+                  </div>
+                </a>
+
+                  <div class="destination__item">
+                    <div class="destination-image">
+                        <a href="">
+                      <img src="./img/destination-4.jpg" alt="Destination image">
+                   
+                      <div class="price">$90</div>
+                    </div>
+                    <h2>Enjoy the Beauty of the Buggy Experience at Palmeraie</h2>
+                    <p class="description">Marrakech</p>
+                    <div class="opinion">
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <p class="description">4.5</p>
+                      </div>
+                      <p class="description">(361 Review)</p>
+                    </div>
+                  </div>
+                </a>
+                
+                  <div class="destination__item">
+                    <div class="destination-image">
+                        <a href="">
+                      <img src="./img/destination-5.jpg" alt="Destination image">
+                    
+                      <div class="price">$45</div>
+                    </div>
+                    <h2>Enjoy the Beauty of the Palm Grove Horseback Riding Tour</h2>
+                    <p class="description">Marrakech</p>
+                    <div class="opinion">
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <p class="description">4.7</p>
+                      </div>
+                      <p class="description">(149 Review)</p>
+                    </div>
+                  </div>
+                </a>
+
+                  <div class="destination__item">
+                    <div class="destination-image">
+                        <a href="">
+                      <img src="./img/destination-6.jpg" alt="Destination image">
+                   
+                      <div class="price">$200</div>
+                    </div>
+                    <h2>Enjoy the Beauty of the Private Sidecar ride</h2>
+                    <p class="description">Marrakech</p>
+                    <div class="opinion">
+                      <div class="rating">
+                        <ion-icon name="star"></ion-icon>
+                        <p class="description">4.6</p>
+                      </div>
+                      <p class="description">(268 Review)</p>
+                    </div>
+                  </div>
+                </a>
+            
+                <!-- Add more destination items if needed -->
+              </div>
+            
+        </section>
+
+        <section class="experience padding-5" id="about">
+            <div class="experience-image">
+                <img src="./img/experience-banner.png" alt="Experience banner">
+                <img src="./img/exp-shape.svg" alt="Experience shape">
+            </div>
+            <div class="experience-info">
+                <h3 class="subtitle">Quality And Comfort</h3>
+                <h2 class="title">Embark on thrilling quad tours with our premier agency and ignite your wanderlust like never before!</h2>
+                <p class="description">Rev up your wanderlust and embark on a quad motorcycle tour with our top-rated tourism agency today! Don't miss out on the ultimate adventure - book now and create memories that will last a lifetime</p>
+                <div class="experience-box">
+                    <div class="experience__item">
+                        <h2>20</h2>
+                        <p class="description">Years<br>Experience</p>
+                    </div>
+                    <div class="experience__item">
+                        <h2>460+</h2>
+                        <p class="description">Destination<br>Collaboration</p>
+                    </div>
+                    <div class="experience__item">
+                        <h2>50k+</h2>
+                        <p class="description">Happy<br>Customer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery padding-5">
+            <h3 class="subtitle">Photo Gallery</h3>
+            <h2 class="title">Travel the Wonderful Landscapes</h2>
+            <div class="gallery-box">
+                <div class="gallery__item">
+                    <img src="./img/gallery-1.jpg" alt="Photo Gallery">
+                </div>
+                <div class="gallery__item">
+                    <img src="./img/gallery-2.jpg" alt="Photo Gallery">
+                </div>
+                <div class="gallery__item">
+                    <img src="./img/gallery-3.webp" alt="Photo Gallery">
+                </div>
+                <div class="gallery__item">
+                    <img src="./img/gallery-4.jpg" alt="Photo Gallery">
+                </div>
+                <div class="gallery__item">
+                    <img src="./img/gallery-5.jpg" alt="Photo Gallery">
+                </div>
+                <div class="gallery__item">
+                    <img src="./img/gallery-6.jpg" alt="Photo Gallery">
+                </div>
+            </div>
+        </section>
+
+        <section class="started" id="contact">
+            <h2 class="title">Prepare Yourself & Let's Explore The Beauty Of The World
+                <img src="./img/title-icon.svg">
+            </h2>
+            <p class="description">We have many special offers recommended for you.</p>
+            <button class="btn-primary">
+                <a href="https://api.whatsapp.com/send/?phone=212633332947&text=Hola+Danila.&type=phone_number&app_absent=0"
+                    target="_blank">
+                <ion-icon name="airplane"></ion-icon>
+                <p>Get Started</p>
+               
+            </a>
+            </button>
+        </section>
+
+
+        <!--Contact  form-->
+              
+          <div class="container-contact">
+            <h2 class="contactus">Contact Us</h2>
+            <form class="contact-us">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" name="country" required>
+                  <option value="">Select Country</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="UK">United Kingdom</option>
+                  <option value="Other">Other</option>
+                  <!-- Add more countries here -->
+                </select>
+              </div>
+        
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+        
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+        
+              <button class="contact-btn" type="submit" onclick="sendMail()">Submit</button>
+            </form>
+          </div>
+        </body>
+        
+        </html>
+
+        <!-- smtp.js-->
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <script>
+          function sendMail(){
+            Email.send({
+              SecureToken : "dc268774-abf9-4a55-87a2-757f300e35db",
+              To : 'adeleddarai29@gmail.com',
+              From : "adeleddarai29@gmail.com",
+              Subject : "This is the subject",
+              Body : "Name: " + document.getElementById("name").value
+                    + "<br> Last Name: " + document.getElementById("lastname").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Country: " + document.getElementById("country").value
+                    + "<br> Phone: " + document.getElementById("phone").value
+                    + "<br> Message: " + document.getElementById("message").value
+                    
+          }).then(
+            message => alert("message sent succesfully")
+          );
+
+          }
+        </script>
+
+    </div>
+
+
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send/?phone=212639654128&text&type=phone_number&app_absent=0"
+          target="_blank"><img src="img/whatsapp.png" class="whatsapp-icon" alt="whatsapp"
+             /></a>
+      </div>
+
+
+        <footer class="padding-5">
+            <div class="footer__left">
+                <!-- <img src="./img/logo.svg" alt="Travelia Logo"> -->
+                <p class="description">We always make our customer happy by providing as many choices as possible</p>
+                <div class="social">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer__list">
+                <h2>About</h2>
+                <li>About Us</li>
+                <li>Features</li>
+                <li>News</li>
+                <li>Menu</li>
+            </ul>
+            <ul class="footer__list">
+                <h2>Company</h2>
+                <li>Why Company</li>
+                <li>Partner With Us</li>
+                <li>FAQ</li>
+                <li>Blog</li>
+            </ul>
+            <ul class="footer__list">
+                <h2>Support</h2>
+                <li>Account</li>
+                <li>Support Center</li>
+                <li>Feedback</li>
+                <li>Accessibility</li>
+            </ul>
+            
+        </footer>
+        <section class="credits">
+            <p>Copyright 2023. Designed by <a href="https://github.com/AdelEddarai">Adel Eddarai</a></p>
+            <span>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy and Policy</a>
+            </span>
+        </section>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
