@@ -81,23 +81,41 @@
   } */
 
 
-  .whatsapp {
-    position: fixed;
-    bottom: 3%;
-    right: 3%;
-    z-index: 2;
+  /* Styles for the WhatsApp icon container */
+.whatsapp {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 2;
+}
+
+/* Styles for the WhatsApp icon */
+.whatsapp-icon {
+  height: 50px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Keyframes for the pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  
-  .whatsapp-icon {
-    height: 50px;
-    /* Add animation properties for the shaking effect */
-    animation: shake 1s infinite;
+  50% {
+    transform: scale(1.2);
   }
+  100% {
+    transform: scale(1);
+  }
+}
+
   
   /* On hover, reduce the brightness */
   .whatsapp-icon:hover {
-    filter: brightness(0.8);
-  }
+     }
+  
+ 
   
   /* Define the shake animation keyframes */
   @keyframes shake {
