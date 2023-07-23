@@ -149,7 +149,7 @@ body {
 .padding-5 {
   width: calc(100% - 10%);
   padding: 0 5%;
-  margin-top: -35px
+  margin-top: -15px
 }
 
 .subtitle {
@@ -174,4 +174,11 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: var(--text-granite-gray);
+}
+
+@media screen and (max-width: 480px) {
+
+  .padding-5 {
+    margin-top: -40px;
+  }
 }
