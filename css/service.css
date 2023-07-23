@@ -5,6 +5,7 @@ section.service {
     padding-block: 10vh;
     margin-bottom: 80px;
     flex-wrap: wrap;
+    z-index: 2;
 }
 
 .service-info {
