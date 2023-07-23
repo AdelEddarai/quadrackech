@@ -257,7 +257,7 @@ destination.forEach((item, index) => {
             <a href="tel:+212633332947"><button class="button contact__card-button">
                                         Call Now
                                     </button></a>
-            <a href="https://api.whatsapp.com/send/?phone=212633332947&text=Hola+Danila.&type=phone_number&app_absent=0"
+            <a href="https://api.whatsapp.com/send/?phone=212633332947&text=Hello+i+saw+your+post+in+webpage.&type=phone_number&app_absent=0"
             target="_blank"><button class="button contact__card-button">
                 Book Now
             </button></a>
