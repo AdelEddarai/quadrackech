@@ -254,13 +254,12 @@ destination.forEach((item, index) => {
                 <p class="description">${item.rating}</p>
             </div>
             <p class="description">(${item.review} Review)</p>
-            <a href="https://api.whatsapp.com/send/?phone=212633332947&text=Hola+Danila.&type=phone_number&app_absent=0"
-                                    target="_blank"><button class="button contact__card-button">
+            <a href="tel:+212633332947"><button class="button contact__card-button">
                                         Call Now
                                     </button></a>
             <a href="https://api.whatsapp.com/send/?phone=212633332947&text=Hola+Danila.&type=phone_number&app_absent=0"
             target="_blank"><button class="button contact__card-button">
-                Call Now
+                Book Now
             </button></a>
 
                                     <style>
