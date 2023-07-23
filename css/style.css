@@ -149,7 +149,7 @@ body {
 .padding-5 {
   width: calc(100% - 10%);
   padding: 0 5%;
-  margin-top: -20px
+  margin-top: -35px
 }
 
 .subtitle {
@@ -158,6 +158,7 @@ body {
   color: var(--text-majorelle-blue);
   font-size: 1rem;
   letter-spacing: 1px;
+  margin-top: -40px;
 }
 
 .title {
