@@ -1,0 +1,527 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/datepicker.min.js"></script>
+
+
+  <title>quads</title>
+</head>
+
+<body class="">
+
+  <nav class="bg-white fixed w-full z-20 top-0 left-0">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://flowbite.com/" class="flex items-center">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-400">BytonaTech</span>
+    </a>
+    <div class="flex md:order-2">
+        <!-- <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button> -->
+        <div class="flex items-center">
+          <a href="tel:5541251234" class="mr-6 text-xl  text-green-400 hover:underline">(555) 412-1234</a>
+          
+      </div>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium bg-gray-50 md:flex-row md:space-x-8 md:mt-0 ">
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <div class="flex justify-center align-items p-4 text-gray-900">
+    <h1 class="text-4xl font-bold">Quad Bike Tour</h1>
+  </div>
+  
+  <div class="grid gap-4">
+    <div class="flex justify-center items-center">
+      <img id="mainImage" class="h-auto max-w-full rounded-lg"
+        src="../destinations/img/destination-1.jpg" alt="">
+    </div>
+    <div class="grid grid-cols-5 gap-4">
+      <div>
+        <img class="h-auto max-w-full rounded-lg small-image"
+          src="../destinations/img/destination-1.jpg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg small-image"
+          src="../destinations/img/destination-1.jpg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg small-image"
+          src="../destinations/img/destination-1.jpg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg small-image"
+          src="../destinations/img/destination-1.jpg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg small-image"
+          src="../destinations/img/destination-1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .flex {
+      display: flex;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const mainImage = document.getElementById("mainImage");
+      const smallImages = document.querySelectorAll(".small-image");
+
+      smallImages.forEach((smallImage) => {
+        smallImage.addEventListener("click", () => {
+          mainImage.src = smallImage.src;
+        });
+      });
+    });
+  </script>
+
+
+  <div class="container mx-auto p-5">
+    <div class="flex items-center mt-10">
+      <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor" viewBox="0 0 22 20">
+        <path
+          d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+      </svg>
+      <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor" viewBox="0 0 22 20">
+        <path
+          d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+      </svg>
+      <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor" viewBox="0 0 22 20">
+        <path
+          d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+      </svg>
+      <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor" viewBox="0 0 22 20">
+        <path
+          d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+      </svg>
+      <svg class="w-4 h-4 text-gray-300 mr-1 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor" viewBox="0 0 22 20">
+        <path
+          d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+      </svg>
+      <p class="ml-2 text-sm font-medium text-gray-900 dark:text-white">4.95 out of 5</p>
+    </div>
+    <p class="text-sm font-medium text-gray-500 dark:text-gray-400">1,745 global ratings</p>
+    <div class="flex items-center mt-4">
+      <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">5 star</a>
+      <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+        <div class="h-5 bg-yellow-300 rounded" style="width: 70%"></div>
+      </div>
+      <span class="text-sm font-medium text-gray-500 dark:text-gray-400">70%</span>
+    </div>
+
+
+
+
+    <div class="flex items-center mt-10">
+      <p
+        class="bg-blue-100 text-blue-800 text-sm font-semibold inline-flex items-center p-1.5 rounded dark:bg-blue-200 dark:text-blue-800">
+        8.7</p>
+      <p class="ml-2 font-medium text-gray-900 text-green-400">Excellent</p>
+      <span class="w-1 h-1 mx-2 bg-gray-900 rounded-full dark:bg-gray-500"></span>
+      <p class="text-sm font-medium text-gray-500 dark:text-gray-400">376 reviews</p>
+      <a href="#" class="ml-auto text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">Read all
+        reviews</a>
+    </div>
+    <div class="gap-8 sm:grid sm:grid-cols-2">
+      <div>
+        <dl>
+          <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">Staff</dt>
+          <dd class="flex items-center mb-3">
+            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+              <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500" style="width: 88%"></div>
+            </div>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">8.8</span>
+          </dd>
+        </dl>
+        <dl>
+          <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">Comfort</dt>
+          <dd class="flex items-center mb-3">
+            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+              <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500" style="width: 89%"></div>
+            </div>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">8.9</span>
+          </dd>
+        </dl>
+        <dl>
+          <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">Free WiFi</dt>
+          <dd class="flex items-center mb-3">
+            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+              <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500" style="width: 88%"></div>
+            </div>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">8.8</span>
+          </dd>
+        </dl>
+        <dl>
+          <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">Facilities</dt>
+          <dd class="flex items-center">
+            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+              <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500" style="width: 54%"></div>
+            </div>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">5.4</span>
+          </dd>
+        </dl>
+      </div>
+      <div>
+        <dl>
+          <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">Value for money</dt>
+          <dd class="flex items-center mb-3">
+            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+              <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500" style="width: 89%"></div>
+            </div>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">8.9</span>
+          </dd>
+        </dl>
+        <dl>
+          <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">Cleanliness</dt>
+          <dd class="flex items-center mb-3">
+            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+              <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500" style="width: 70%"></div>
+            </div>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">7.0</span>
+          </dd>
+        </dl>
+        <dl>
+          <dt class="text-sm font-medium text-gray-500 dark:text-gray-400">Location</dt>
+          <dd class="flex items-center">
+            <div class="w-full bg-gray-200 rounded h-2.5 dark:bg-gray-700 mr-2">
+              <div class="bg-blue-600 h-2.5 rounded dark:bg-blue-500" style="width: 89%"></div>
+            </div>
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400">8.9</span>
+          </dd>
+        </dl>
+      </div>
+    </div>
+
+  </div>
+
+
+  </main>
+
+
+  <div class="rounded-lg shadow p-6 mb-10 mt-10">
+    <h2 class="text-2xl font-bold mb-4">Nearby Amenities and Points of Interest</h2>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="rounded-md bg-blue-100 p-4">
+        <span class="text-gray-600">Location:</span>
+        <span class="text-gray-900">Marrackech</span>
+      </div>
+      <div class="rounded-md bg-blue-100 p-4">
+        <span class="text-gray-600">Size:</span>
+        <span class="text-gray-900">1200 sq. ft</span>
+      </div>
+      <div class="rounded-md bg-blue-100 p-4">
+        <span class="text-gray-600">Bedrooms:</span>
+        <span class="text-gray-900">2</span>
+      </div>
+      <div class="rounded-md bg-blue-100 p-4">
+        <span class="text-gray-600">Bathrooms:</span>
+        <span class="text-gray-900">1</span>
+      </div>
+      <div class="col-span-2 rounded-md bg-blue-100 p-4">
+        <span class="text-gray-600">Amenities:</span>
+        <span class="text-gray-900">Swimming Pool, Gym, Parking</span>
+      </div>
+    </div>
+    <p class="mt-4">
+      Don't miss the opportunity to make this house your dream home. Schedule a showing today and experience the charm
+      and beauty this property has to offer.
+    </p>
+  </div>
+
+
+
+
+  <div class="container mx-auto p-5">
+
+    <ul class="space-y-4 text-left text-black">
+      <li class="flex items-center space-x-3">
+        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 5.917 5.724 10.5 15 1.5" />
+        </svg>
+        <span>Individual configuration</span>
+      </li>
+      <li class="flex items-center space-x-3">
+        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 5.917 5.724 10.5 15 1.5" />
+        </svg>
+        <span>No setup, or hidden fees</span>
+      </li>
+      <li class="flex items-center space-x-3">
+        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 5.917 5.724 10.5 15 1.5" />
+        </svg>
+        <span>Team size: <span class="font-semibold text-gray-900 dark:text-white">1 developer</span></span>
+      </li>
+      <li class="flex items-center space-x-3">
+        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 5.917 5.724 10.5 15 1.5" />
+        </svg>
+        <span>Premium support: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+      </li>
+      <li class="flex items-center space-x-3">
+        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 5.917 5.724 10.5 15 1.5" />
+        </svg>
+        <span>Free updates: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+      </li>
+    </ul>
+  </div>
+
+
+<br>
+
+
+  <div class="relative border border-gray-300 rounded-lg overflow-hidden mb-10 m-5 ">
+    <a href="360-image-preview-main/360-image-preview-main/index.html">
+      <img src="img/destination-4.jpg" alt="Image" class="blur-sm w-full h-[300px] object-cover">
+
+      <!-- Text overlay -->
+      <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+        <p class="text-white text-2xl font-bold bg-opacity-50 p-4">View 360</p>
+      </div>
+    </a>
+  </div>
+
+  </div>
+  </div>
+
+
+
+  <!-- Calendar Component -->
+  <div class="justify-center align-items flex">
+    <div date-rangepicker class="flex items-center">
+      <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+          </svg>
+        </div>
+        <input name="start" type="text" id="start-date"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Select date start">
+      </div>
+      <span class="mx-4 text-gray-500">to</span>
+      <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+          </svg>
+        </div>
+        <input name="end" type="text" id="end-date"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Select date end">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Trip Planner Component -->
+  <div class="rounded-lg p-4 mt-4">
+
+
+    <form>
+      <div class="grid gap-6 mb-6 md:grid-cols-2">
+        <div>
+          <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First
+            name</label>
+          <input type="text" id="first_name"
+            class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-100 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-100 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="John" required>
+        </div>
+        <div>
+          <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
+          <input type="text" id="last_name"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Doe" required>
+        </div>
+
+        <div>
+          <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
+          <input type="tel" id="phone"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+        </div>
+
+
+      </div>
+      <div class="mb-6">
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+        <input type="email" id="email"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="john.doe@company.com" required>
+      </div>
+
+
+    </form>
+
+
+
+
+    <button onclick="planTrip()" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white rounded px-4 py-2">Plan
+      Trip</button>
+  </div>
+
+
+  <script>
+
+    function planTrip() {
+      const startDate = document.getElementById('start-date').value;
+      const endDate = document.getElementById('end-date').value;
+      const destination = document.getElementById('destination').value;
+      const tripNotes = document.getElementById('trip-notes').value;
+
+
+
+      // Format the trip details as a message
+      const message = `Start Travel: ${startDate}\nEnd Travel: ${endDate}\nDestination: ${destination}\nTrip Notes: ${tripNotes}`;
+
+      // Replace 'YOUR_PHONE_NUMBER' with your actual WhatsApp phone number
+      const phoneNumber = '+212633332947';
+
+      // Generate the WhatsApp URL
+      const whatsAppURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+
+      // Open WhatsApp in a new tab with the trip details
+      window.open(whatsAppURL, '_blank');
+    }
+  </script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+  <div class="flex justify-center items-center">
+    <add-to-calendar-button name="[Reminder] Test the Add to Calendar Button" startDate="today+2" startTime="10:15"
+      endTime="23:30" timeZone="America/Los_Angeles" location="https://add-to-calendar-button.com"
+      description="Check out the maybe easiest way to include Add to Calendar Buttons to your web projects:[br]→ [url]https://add-to-calendar-button.com/"
+      options="'Apple','Google','iCal','Outlook.com','Yahoo'" lightMode="bodyScheme"></add-to-calendar-button>
+  </div>
+
+
+
+  <style>
+    .justify-center {
+      margin: 5px;
+      border-radius: 10px;
+      /* Adjust the value to change the roundness of the corners */
+      overflow: hidden;
+      /* This is necessary to ensure the rounded corners are applied to the iframe as well */
+    }
+  </style>
+
+
+  <div class="mt-5 justify-center align-items flex">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1391.0569693146804!2d-7.702431407240428!3d31.636004807005186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda559d773fc28f1%3A0xe212a1cafaedee3c!2sAit%20Ourire%20al%20haouz%20maroc!5e1!3m2!1sen!2sma!4v1690147009621!5m2!1sen!2sma"
+      width="700" height="450" style="border:15;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="rounded-lg shadow m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black">quadrackech</span>
+        </a>
+        <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-black sm:mb-0 dark:text-gray-400">
+          <li>
+            <a href="#" class="text-gray-900 mr-4 hover:underline md:mr-6 ">About</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-900 mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-900 mr-4 hover:underline md:mr-6 ">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-900 hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-black sm:text-center dark:text-gray-900">© 2023 <a href="https://flowbite.com/"
+          class="hover:underline">Quadrackech</a>. All Rights Reserved.</span>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <!-- <script src="//code.tidio.co/lmasyh7pwjjaxcywqhk4cnsqu79wtojj.js" async></script> -->
+  <script src="js/spotlight.bundle.js"></script>
+
+  <!-- Script that makes the sheet work -->
+
+</body>
+
+</html>
