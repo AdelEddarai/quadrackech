@@ -89,6 +89,12 @@
   z-index: 2;
 }
 
+.call {
+  position: fixed;
+  bottom: 3%;
+  left: 3%;
+  z-index: 2;
+}
 /* Styles for the WhatsApp icon */
 .whatsapp-icon {
   height: 50px;
