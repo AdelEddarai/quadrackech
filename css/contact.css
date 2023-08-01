@@ -1,4 +1,30 @@
- input,
+
+/* .container-contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+.contact-us {
+    margin-top: 20px;
+}
+
+.contactus {
+    margin-left: 100px;
+} */
+
+  /* .form-group {
+    margin-bottom: 20px;
+    width: 150%;
+  } */
+
+  /* label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  } */
+
+  input,
   select,
   textarea {
     width: 100%;
@@ -16,8 +42,46 @@
     cursor: pointer;
   }
 
+  /* @media screen and (max-width: 480px) {
+    .container-contact {
+      max-width: 100%;
+      padding: 10px;
+    
+    }
 
+    .form-group {
+        margin-bottom: 20px;
+        margin-left: -120px;
+      }
 
+    .contact-us {
+      margin-top: 25px;
+      
+    }
+
+    .contactus {
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+
+    
+  } */
+
+  /* .whatsapp {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+  
+  }
+  .whatsapp-icon .btns {
+    height: 50px;
+  }
+  .whatsapp-icon:hover,
+  button:hover {
+  filter: brightness(0.8);
+  } */
+
+/* Contact form */
 .container-contact {
   max-width: 600px;
   margin: 0 auto;
@@ -65,20 +129,6 @@ textarea {
   }
 }
 
-
-  /* .whatsapp {
-    position: fixed;
-    bottom: 3%;
-    right: 3%;
-  
-  }
-  .whatsapp-icon .btns {
-    height: 50px;
-  }
-  .whatsapp-icon:hover,
-  button:hover {
-  filter: brightness(0.8);
-  } */
 
 
   /* Styles for the WhatsApp icon container */
