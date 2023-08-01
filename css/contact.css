@@ -1,70 +1,50 @@
-
 .container-contact {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-.contact-us {
-    margin-top: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  /* margin-left: 1px; */
 }
 
-.contactus {
-    margin-left: 100px;
+.form-group {
+  margin-bottom: 20px;
 }
 
-  .form-group {
-    margin-bottom: 20px;
-    width: 150%;
-  }
+label {
+  display: block;
+  margin-bottom: 5px;
+}
 
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
 
-  input,
-  select,
-  textarea {
-    width: 100%;
+textarea {
+  resize: vertical;
+}
+
+.contact-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 480px) {
+  /* Adjust layout for small screens */
+  .container-contact {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
   }
+}
 
-  .contact-btn {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  @media screen and (max-width: 480px) {
-    .container-contact {
-      max-width: 100%;
-      padding: 10px;
-
-    }
-
-    .form-group {
-        margin-bottom: 20px;
-        width: 250px;
-      }
-
-    .contact-us {
-      margin-top: 25px;
-    }
-
-    .contactus {
-        margin-left: 70px;
-        margin-top: 10px;
-    }
-
-    
-  }
 
   /* .whatsapp {
     position: fixed;
